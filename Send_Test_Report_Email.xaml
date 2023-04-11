@@ -119,24 +119,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="praga.v@uipath.com" sap2010:Annotation.AnnotationText="This is a sample only and the email activities will not work. Kindly replace this with the activities relevant to your landscape" DisplayName="Use Outlook 365" EmailAddress="praga.v@uipath.com" sap:VirtualizedContainerService.HintSize="530,806" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_1" UseConnectionService="False">
-      <umab:ExchangeApplicationCard.ApplicationId>
-        <InArgument x:TypeArguments="x:String">
-          <Literal x:TypeArguments="x:String" Value="" />
-        </InArgument>
-      </umab:ExchangeApplicationCard.ApplicationId>
+    <umab:ExchangeApplicationCard ApplicationId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" TenantId="{x:Null}" Account="Please select an account" sap2010:Annotation.AnnotationText="This is a sample only and the email activities will not work. Kindly replace this with the activities relevant to your landscape" DisplayName="Use Outlook 365" sap:VirtualizedContainerService.HintSize="530,806" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_2" UseConnectionService="False">
       <umab:ExchangeApplicationCard.Body>
         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Exchange" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,542" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,542" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Exchange]" sap2010:Annotation.AnnotationText="Open editor and refer the sample message" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,431" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Test Set: &quot;+ in_StrTestSetName +&quot; - Execution Completed&quot;]" To="praga.v@uipath.com" UseDocumentAsBody="False">
+            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Exchange]" sap2010:Annotation.AnnotationText="Open editor and refer the sample message" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,431" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Test Set: &quot;+ in_StrTestSetName +&quot; - Execution Completed&quot;]" To="&lt;&lt;youremailhere&gt;&gt;" UseDocumentAsBody="False">
               <umab:SendMailX.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                   <InArgument x:TypeArguments="x:String">[in_StrOutputReportPath]</InArgument>
@@ -168,11 +163,11 @@
           </Sequence>
         </ActivityAction>
       </umab:ExchangeApplicationCard.Body>
-      <umab:ExchangeApplicationCard.TenantId>
+      <umab:ExchangeApplicationCard.EmailAddress>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
         </InArgument>
-      </umab:ExchangeApplicationCard.TenantId>
+      </umab:ExchangeApplicationCard.EmailAddress>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
