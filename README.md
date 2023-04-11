@@ -2,7 +2,7 @@
 Sample project explaining the usage of GenerateTestReport library.
 
 Follow below steps to use the GenerateTestReport library component.
-1. Download and install the GenerateTestReport library component in your project from the below Git location
+1. Download and install the [GenerateTestReport](https://github.com/pragadees/UiPath-GenerateTestReport) library component in your project from Git.
 2. Surround the test case with Try Catch block and define your test case under Try block. Use Info level logs to add more information to the test case logs.
 3. Have an Assert activity in the catch block to set the status of the test case to Failed in case of any exceptions.
 4. Under Finally call the 'Generate Test Report' library component and pass the below required parameters.
