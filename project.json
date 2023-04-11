@@ -1,0 +1,72 @@
+{
+  "name": "Report_Generation_Test_Project",
+  "description": "Test automation project to test report generation",
+  "main": "Main.xaml",
+  "dependencies": {
+    "GenerateTestReport": "[1.0.5]",
+    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.Testing.Activities": "[22.10.3]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.5.0",
+  "projectVersion": "1.0.6-alpha.2",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ab3c9a85-3cb3-4c03-ae6c-607424f8250a",
+        "dataVariationFilePath": ".variations\\test data_Sheet1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TC03_Create_Sales_Order_In_SAP.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c3b41576-5e9f-41b3-8128-8e36ceecacca",
+        "testCaseType": "TestCase",
+        "fileName": "TC01_Create_Purchase_Order_In_SAP.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ee55d559-7aa4-48cf-8a64-dc552827ae12",
+        "testCaseType": "TestCase",
+        "fileName": "TC02_Convert_Purchase_Requisition_To_Purchase_Order.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
